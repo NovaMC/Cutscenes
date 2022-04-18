@@ -20,7 +20,7 @@ public class FloodgateCompat implements CompatRunner {
     @Override
     public void onTransition(Transition transition, Player player) {
         if (floodgate != null && floodgate.isFloodgatePlayer(player.getUniqueId())) {
-            transition = Transition.cut();
+            transition.setType(Transition.Type.CUT);
         }
     }
 }
