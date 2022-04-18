@@ -1,7 +1,7 @@
 package xyz.novaserver.cutscenes.cutscene;
 
 public class Transition {
-    private Type type;
+    private final Type type;
     // # of frames from the end of an animation to start transition
     private long startFrame = 0;
 
@@ -18,10 +18,6 @@ public class Transition {
         return new Fade(Type.FADE, fadeIn, stay, fadeOut);
     }
 
-
-    public void setType(Type type) {
-        this.type = type;
-    }
 
     public Type getType() {
         return type;
