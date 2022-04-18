@@ -14,7 +14,7 @@ public class TABCompat implements CompatRunner {
     public void onSetup(Player player) {
         TabPlayer tabPlayer = tabAPI.getPlayer(player.getUniqueId());
         scoreboardVisible = tabAPI.getScoreboardManager().hasScoreboardVisible(tabPlayer);
-        tabAPI.getScoreboardManager().setScoreboardVisible(tabPlayer, scoreboardVisible, false);
+        tabAPI.getScoreboardManager().setScoreboardVisible(tabPlayer, false, false);
     }
 
     @Override
