@@ -4,7 +4,7 @@ main: xyz.novaserver.cutscenes.Cutscenes
 api-version: 1.18
 authors: [Nova]
 depend: [ProtocolLib]
-softdepend: [Themis, floodgate, TAB]
+softdepend: [Themis, floodgate, TAB, NovaPlaceholders]
 commands:
   cutscene:
     description: Manages cutscenes.
