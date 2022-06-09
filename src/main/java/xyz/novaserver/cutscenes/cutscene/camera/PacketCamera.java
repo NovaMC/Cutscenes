@@ -45,15 +45,14 @@ public class PacketCamera extends Camera {
     private void loadCompatibility() {
         // Register compatibility with various plugins
         PluginManager pluginManager = Bukkit.getPluginManager();
-        if (pluginManager.isPluginEnabled("Themis")) {
+        if (pluginManager.isPluginEnabled("Themis"))
             compatListeners.add(new ThemisListener(player.getUniqueId()));
-        }
-        if (pluginManager.isPluginEnabled("floodgate")) {
+        if (pluginManager.isPluginEnabled("floodgate"))
             compatRunners.add(new FloodgateCompat());
-        }
-        if (pluginManager.isPluginEnabled("TAB")) {
+        if (pluginManager.isPluginEnabled("TAB"))
             compatRunners.add(new TABCompat());
-        }
+        if (pluginManager.isPluginEnabled("NovaPlaceholders"))
+            compatRunners.add(new ActionbarCompat());
         compatListeners.forEach(compatListener -> pluginManager.registerEvents(compatListener, plugin));
     }
 

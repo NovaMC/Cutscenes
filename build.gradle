@@ -20,6 +20,7 @@ dependencies {
     compileOnly "com.comphenix.protocol:ProtocolLib:4.8.0"
     compileOnly "org.geysermc.floodgate:api:2.0-SNAPSHOT"
     compileOnly "me.neznamy:tab-api:3.1.0"
+    compileOnly "xyz.novaserver.placeholders:paper:2.0-SNAPSHOT"
     compileOnly files("libs/Themis.jar")
 }
 
