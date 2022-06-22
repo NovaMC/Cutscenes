@@ -1,0 +1,17 @@
+metadata.format.version = "1.1"
+
+[versions]
+
+paper = "1.19-R0.1-SNAPSHOT"
+protocollib = "4.8.0"
+floodgate = "2.0-SNAPSHOT"
+tab = "3.1.0"
+placeholders = "2.0-SNAPSHOT"
+
+[libraries]
+
+paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" }
+protocollib = { group = "com.comphenix.protocol", name = "ProtocolLib", version.ref = "protocollib" }
+floodgate = { group = "org.geysermc.floodgate", name = "api", version.ref = "floodgate" }
+tab = { group = "me.neznamy", name = "tab-api", version.ref = "tab" }
+placeholders = { group = "xyz.novaserver.placeholders", name = "paper", version.ref = "placeholders" }

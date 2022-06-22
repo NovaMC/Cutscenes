@@ -1,5 +1,5 @@
-name: NovaCutscenes
-version: '${version}'
+name: @name@
+version: @version@
 main: xyz.novaserver.cutscenes.Cutscenes
 api-version: 1.18
 authors: [Nova]
