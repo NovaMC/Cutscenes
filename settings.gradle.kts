@@ -1,5 +1,4 @@
 @file:Suppress("UnstableApiUsage")
-
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 enableFeaturePreview("VERSION_CATALOGS")
 
@@ -21,8 +20,9 @@ pluginManagement {
 
 rootProject.name = "NovaCutscenes"
 
-include(":api")
-include(":paper")
-
-findProject(":api")?.name = "cutscenes-api"
-findProject(":paper")?.name = "cutscenes-paper"
+sequenceOf(
+    "api",
+    "paper"
+).forEach {
+    include(":$it")
+}

@@ -14,4 +14,4 @@ paper = { group = "io.papermc.paper", name = "paper-api", version.ref = "paper" 
 protocollib = { group = "com.comphenix.protocol", name = "ProtocolLib", version.ref = "protocollib" }
 floodgate = { group = "org.geysermc.floodgate", name = "api", version.ref = "floodgate" }
 tab = { group = "me.neznamy", name = "tab-api", version.ref = "tab" }
-placeholders = { group = "xyz.novaserver.placeholders", name = "paper", version.ref = "placeholders" }
+placeholders = { group = "xyz.novaserver.placeholders", name = "placeholders-paper", version.ref = "placeholders" }

@@ -2,10 +2,13 @@ plugins {
     id("cutscenes.parent")
 }
 
-allprojects {
-    group = "xyz.novaserver.cutscenes"
-}
+val platforms = setOf(
+    projects.paper
+).map { it.dependencyProject }
 
 subprojects {
-    plugins.apply("cutscenes.base-conventions")
+    when (this) {
+        in platforms -> plugins.apply("cutscenes.platform-conventions")
+        else -> plugins.apply("cutscenes.base-conventions")
+    }
 }

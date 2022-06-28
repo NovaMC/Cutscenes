@@ -5,6 +5,8 @@ plugins {
     `maven-publish`
 }
 
+val prefixedName = "cutscenes-${project.name}"
+
 tasks {
     processResources {
         filter<ReplaceTokens>("tokens" to mapOf(
@@ -16,9 +18,13 @@ tasks {
         options.encoding = Charsets.UTF_8.name()
         options.release.set(17)
     }
+    jar {
+        archiveBaseName.set(prefixedName)
+    }
     publishing {
         publications {
             create<MavenPublication>("maven") {
+                artifactId = prefixedName
                 from(components["java"])
             }
         }
