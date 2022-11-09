@@ -9,7 +9,7 @@ dependencyResolutionManagement {
         maven("https://repo.dmulloy2.net/repository/public/")
         maven("https://repo.opencollab.dev/maven-snapshots/")
         maven("https://repo.kryptonmc.org/releases")
-        mavenLocal()
+        maven("https://repo.novaserver.xyz/snapshots/")
     }
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 }

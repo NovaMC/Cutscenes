@@ -2,10 +2,10 @@ metadata.format.version = "1.1"
 
 [versions]
 
-paper = "1.19-R0.1-SNAPSHOT"
-protocollib = "4.8.0"
-floodgate = "2.0-SNAPSHOT"
-tab = "3.1.0"
+paper = "1.19.2-R0.1-SNAPSHOT"
+protocollib = "5.0.0-SNAPSHOT"
+floodgate = "2.2.0-SNAPSHOT"
+tab = "3.1.5"
 placeholders = "2.0-SNAPSHOT"
 
 [libraries]
