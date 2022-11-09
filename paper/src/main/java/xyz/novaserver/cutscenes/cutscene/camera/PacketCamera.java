@@ -128,11 +128,7 @@ public class PacketCamera extends Camera {
     */
 
     private void sendPacket(PacketContainer packet) {
-        try {
-            protocolManager.sendServerPacket(player, packet);
-        } catch (InvocationTargetException e) {
-            throw new RuntimeException("Failed to send packet", e);
-        }
+        protocolManager.sendServerPacket(player, packet);
     }
 
     private PacketContainer getGameModePacket(GameMode gameMode) {
