@@ -1,10 +1,15 @@
 name: @name@
 version: @version@
-main: xyz.novaserver.cutscenes.Cutscenes
-api-version: 1.18
+main: xyz.novaserver.cutscenes.paper.CutscenesPaper
+api-version: 1.19
 author: Lui798
-depend: [ProtocolLib]
-softdepend: [Themis, floodgate, TAB, NovaPlaceholders]
+depend:
+  - ProtocolLib
+softdepend:
+  - Themis
+  - floodgate
+  - TAB
+  - NovaPlaceholders
 commands:
   cutscene:
     description: Manages cutscenes.

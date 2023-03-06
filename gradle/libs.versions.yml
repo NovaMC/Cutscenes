@@ -1,0 +1,60 @@
+metadata:
+  format: { version: 1.0 }
+  polyglot-extensions:
+    - plugins
+
+plugins:
+  io.papermc.paperweight.userdev: 1.3.11
+
+versions:
+  minecraft: 1.19.2
+  paperApi: 1.19.2-R0.1-SNAPSHOT
+  protocollib: 5.0.0-SNAPSHOT
+  floodgate: 2.2.0-SNAPSHOT
+  tab: 3.1.5
+  placeholders: 2.0-SNAPSHOT
+  jgltf: 2.0.3
+  lwjgl: 2.9.3
+  configurate: 4.1.2
+
+  shadow: 7.1.2
+
+dependencies:
+  paperApi:
+    group: "io.papermc.paper"
+    name: "paper-api"
+    version: { ref: paperApi }
+  protocollib:
+    group: "com.comphenix.protocol"
+    name: "ProtocolLib"
+    version: { ref: protocollib }
+  floodgate:
+    group: "org.geysermc.floodgate"
+    name: "api"
+    version: { ref: floodgate }
+  tab:
+    group: "me.neznamy"
+    name: "tab-api"
+    version: { ref: tab }
+  placeholders:
+    group: "xyz.novaserver.placeholders"
+    name: "placeholders-paper"
+    version: { ref: placeholders }
+
+  jgltf:
+    group: "de.javagl"
+    name: "jgltf-model"
+    version: { ref: jgltf }
+  lwjgl:
+    group: "org.lwjgl.lwjgl"
+    name: "lwjgl_util"
+    version: { ref: lwjgl }
+  configurate:
+    group: "org.spongepowered"
+    name: "configurate-yaml"
+    version: { ref: configurate }
+
+  shadow:
+    group: gradle.plugin.com.github.johnrengelman
+    name: shadow
+    version: { ref: shadow }
